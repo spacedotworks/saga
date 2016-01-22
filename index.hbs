@@ -2,12 +2,17 @@
 <header id="header">
     <div class="header-background">
     <section class="blog-content animated fadeIn">
-        <a id="site-url" class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a>
+        <a id="site-url" class="blog-title" href="{{@blog.url}}">
+
+<img src="/content/images/smalllogo.png" style="height:52px; width:52px; margin: 0;">
+
+</a>
         <span class="blog-description">{{@blog.description}}</span>
         {{> links}}
     </section>
     </div>
 </header>
+{{navigation}}
 <main id="main" class="archive">
     {{>loop}}
 </main>
